@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/categoria.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/categoria.php';
 
 $nome = $_POST['input-categorias'];
 
@@ -8,5 +8,5 @@ $categoria->nome_categoria = $nome;
 
 $id_categoria = $categoria->cadastrarCategoria();
 
-header('Location: /estante_webb/banco/views/categorias.php');
+header('Location: /estante/views/categorias.php');
 exit();

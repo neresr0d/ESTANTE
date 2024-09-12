@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/configs/conexao.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/configs/conexao.php';
 
 class Usuario
 {

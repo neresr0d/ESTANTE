@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/categoria.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/categoria.php';
 
 $listagem_categoria = Categoria::listarCategoria();
 ?>
@@ -8,14 +8,14 @@ $listagem_categoria = Categoria::listarCategoria();
   <div id="modal-livros">
     <div id="btn-livros">
       <h1>Adicionar Livros</h1>
-      <a class="btn-back" href="/estante_webb/banco/views/livros.php"><img src="/estante_webb/banco/imgs/back-icon.svg" alt="" /></a>
+      <a class="btn-back" href="/estante/views/livros.php"><img src="/estante/imgs/back-icon.svg" alt="" /></a>
     </div>
 
-    <form action="/estante_webb/banco/controllers/cadastrar_livro_controller.php" method="post" enctype="multipart/form-data" id="form-addLivros">
+    <form action="/estante/controllers/cadastrar_livro_controller.php" method="post" enctype="multipart/form-data" id="form-addLivros">
       <div id="input-add-livro">
 
         <div id="capaLivro">
-          <img src="/estante_webb/banco/imgs/livro01-quarta-capa.jpg" alt="" class="capa_img">
+          <img src="/estante/imgs/livro01-quarta-capa.jpg" alt="" class="capa_img">
         </div>
         <input type="file" name="capa-livro" id="capa-livro" required />
 
@@ -63,7 +63,7 @@ $listagem_categoria = Categoria::listarCategoria();
 </main>
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
 ?>
 
 </body>

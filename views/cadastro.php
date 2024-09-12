@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
 ?>
 
 <main id="conteudo-cadastro">
@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.p
     <div id="modal-cadastro">
       <h1>Crie sua conta</h1>
       <form
-        action="/estante_webb/banco/controllers/cadastrar_usuario_controller.php"
+        action="/estante/controllers/cadastrar_usuario_controller.php"
         method="post"
         id="form-cadastro"
         enctype="multipart/form-data">
@@ -46,7 +46,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.p
         </div>
         <button type="submit">CRIAR CONTA</button>
         <p>Já é cadastrado?</p>
-        <p><a href="/estante_webb/banco/views/login.php">Acesse sua conta</a></p>
+        <p><a href="/estante/views/login.php">Acesse sua conta</a></p>
       </form>
     </div>
     <div id="termos-usos">
@@ -59,7 +59,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.p
 </main>
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
 ?>
 </body>
 

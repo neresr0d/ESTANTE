@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/livro.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/livro.php';
 
 $titulo = $_POST['title-livro'];
 $autor = $_POST['autor-livro'];
@@ -17,10 +17,10 @@ $livro->id_categoria = $id_categoria;
 if (isset($capa)) {
     $livro->capa = $capa;
 } else {
-    $livro->capa = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/imgs/perfil_icon.svg');
+    $livro->capa = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/estante/imgs/perfil_icon.svg');
 }
 
 $id_livro = $livro->cadastrarLivro();
 
-header('Location: /estante_webb/banco/views/livros.php');
+header('Location: /estante/views/livros.php');
 exit();

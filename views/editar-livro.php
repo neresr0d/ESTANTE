@@ -1,7 +1,7 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/livro.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/categoria.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/livro.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/categoria.php';
 
 $id_livro = $_GET['id_livro'];
 $livro = new Livro($id_livro);
@@ -17,10 +17,10 @@ $categoria_atual = $livro->id_categoria;
   <div id="modal-livros">
     <div id="btn-livros">
       <h1>Editar Livros</h1>
-      <a class="btn-back" href="/estante_webb/banco/views/livros.php"><img src="/estante_webb/banco/imgs/back-icon.svg" alt="" /></a>
+      <a class="btn-back" href="/estante/views/livros.php"><img src="/estante/imgs/back-icon.svg" alt="" /></a>
     </div>
 
-    <form action="/estante_webb/banco/controllers/edit_livro_controller.php" method="post" enctype="multipart/form-data" id="form-editLivros">
+    <form action="/estante/controllers/edit_livro_controller.php" method="post" enctype="multipart/form-data" id="form-editLivros">
       <input type="hidden" name="id_livro" value="<?= $livro->id_livro ?>">
 
       <div id="input-edit-livro">
@@ -54,7 +54,7 @@ $categoria_atual = $livro->id_categoria;
 </main>
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
 ?>
 </body>
 

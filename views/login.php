@@ -1,11 +1,11 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
 ?>
     <main id="conteudo-login">
       <div id="div-login">
         <div id="modal-login">
           <h1>Acesse sua conta</h1>
-          <form action="/estante_webb/banco/controllers/login_controller.php" method="post" id="form-login">
+          <form action="/estante/controllers/login_controller.php" method="post" id="form-login">
             <div class="input-login">
               <label for="email-login">E-mail:</label>
               <input
@@ -31,13 +31,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.p
         </div>
         <div id="criar-conta">
           <p>Ainda não é cadastrado ?</p>
-          <p><a href="/estante_webb/banco/views/cadastro.php">Crie sua conta</a></p>
+          <p><a href="/estante/views/cadastro.php">Crie sua conta</a></p>
         </div>
       </div>
     </main>
 
     <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
     ?>
   </body>
 </html>

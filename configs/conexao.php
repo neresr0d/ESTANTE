@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/configs/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/configs/config.php';
 
 class Conexao {
     static function conectar() {

@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
 
 // echo '<pre>';
 // print_r($_SESSION['foto_perfil']);
@@ -35,7 +35,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.p
 </main>
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
 ?>
 
 </body>

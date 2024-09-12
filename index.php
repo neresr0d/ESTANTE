@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/livro.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/livro.php';
 
 $listagem_livro = Livro::listarLivro();
 ?>
@@ -10,10 +10,10 @@ $listagem_livro = Livro::listarLivro();
       <img src="data:image; base64, <?= base64_encode($livro['capa']) ?>" alt="" class="capa_livro">
       <h1><?= $livro['titulo'] ?></h1>
       <span class="favorito-livro-icon">
-        <form action="/estante_webb/banco/controllers/fav_livro_controller.php" method="post">
+        <form action="/estante/controllers/fav_livro_controller.php" method="post">
           <input type="hidden" name="id_livro" value="<?= $livro['id_livro'] ?>">
           <input type="hidden" name="id_usuario" value="<?= $_SESSION['id_usuario'] ?>">
-          <button type="submit"><img src="/estante_webb/banco/imgs/bookmark-regular.svg" alt=""></button>
+          <button type="submit"><img src="/estante/imgs/bookmark-regular.svg" alt=""></button>
         </form>
       </span>
     </div>
@@ -21,7 +21,7 @@ $listagem_livro = Livro::listarLivro();
 </main>
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
 ?>
 </body>
 

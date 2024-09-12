@@ -1,7 +1,7 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_cabecalho.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/favoritos.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/categoria.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/favoritos.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/categoria.php';
 
 $listagem_categoria = Categoria::listarCategoria();
 
@@ -23,7 +23,7 @@ $listagem_favorito = Favorito::listarLivroFavorito($_SESSION['id_usuario']);
         <div class="livro-favorito">
           <img src="data:image; base64, <?= base64_encode($favorito['capa']) ?>" alt="" />
           <h1><?= $favorito['titulo'] ?></h1>
-          <span class="coracao-icon"><img src="/estante_webb/banco/imgs/bookmark-icon.svg" alt="" /></span>
+          <span class="coracao-icon"><img src="/estante/imgs/bookmark-icon.svg" alt="" /></span>
         </div>
       <?php endforeach; ?>
     </div>
@@ -31,7 +31,7 @@ $listagem_favorito = Favorito::listarLivroFavorito($_SESSION['id_usuario']);
 </main>
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/views/_rodape.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_rodape.php';
 ?>
 </body>
 

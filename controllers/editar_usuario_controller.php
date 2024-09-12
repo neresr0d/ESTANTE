@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/usuario.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/usuario.php';
 
 session_start();
 
@@ -15,5 +15,5 @@ $usuario->foto_perfil = $foto_perfil;
 
 $usuario->atualizarUsuario();
 
-header('Location: /estante_webb/banco/views/perfil.php');
+header('Location: /estante/views/perfil.php');
 exit();

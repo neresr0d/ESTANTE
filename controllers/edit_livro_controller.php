@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/models/livro.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/models/livro.php';
 
 $id_livro = $_POST['id_livro'];
 $titulo = $_POST['edit-title-livro'];
@@ -19,9 +19,9 @@ $livro->sinopse = $sinopse;
 if (isset($capa)) {
     $livro->capa = $capa;
 } else {
-    $livro->capa = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/imgs/perfil_icon.svg');
+    $livro->capa = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/estante/imgs/perfil_icon.svg');
 }
 
 $livro->atualizarLivro();
-header('Location: /estante_webb/banco/views/livros.php');
+header('Location: /estante/views/livros.php');
 exit();

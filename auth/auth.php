@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_webb/banco/configs/conexao.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/configs/conexao.php';
 session_start();
 class Auth
 {
@@ -24,7 +24,7 @@ class Auth
                 $_SESSION['nome'] = $resultado['nome'];
                 $_SESSION['email'] = $resultado['email'];
 
-                header('Location: /estante_webb/banco/index.php');
+                header('Location: /estante/index.php');
                 exit();
             }
         } catch (PDOException $erro) {
@@ -36,7 +36,7 @@ class Auth
     {
         session_unset();
         session_destroy();
-        header('Location: /estante_webb/banco/views/login.php');
+        header('Location: /estante/views/login.php');
         exit();
     }
 
