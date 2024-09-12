@@ -15,6 +15,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
 
         <div class="input-cadastro">
           <label for="foto_perfil">Foto do Perfil:</label>
+          <!-- <img src="/estante/imgs/upload.png" alt="Imagem" class="img-perfil"> -->
           <input type="file" name="foto_perfil" id="foto_perfil" />
         </div>
 

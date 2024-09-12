@@ -103,6 +103,8 @@ nav > a {
 nav > a:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-tercearia);
+  border-radius: 50px;
+  
 }
 
 .alinhar {
@@ -292,6 +294,7 @@ footer {
 .input-login > label,
 .input-cadastro > label {
   text-align: start;
+  
 }
 
 .input-login > input,
@@ -574,11 +577,11 @@ a {
   justify-content: center;
   gap: 20px;
   /* background-color: var(--cor-secundaria); */
-  border: 10px solid var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
   border-bottom: none;
   width: 100%;
   height: 100%;
-  padding: 25px;
+  padding: 20px;
   border-radius: 0px 50px 0px 0px;
 }
 
@@ -828,29 +831,36 @@ a {
 }
 /* Estilizando o Contato */
 
+
+
+
+
 #contatos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  
 }
 
 .icon-contato {
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 
   font-family: "Special Elite", system-ui;
   font-size: 3rem;
 }
 
 .div-contato {
+  
   background-color: var(--cor-primaria);
   border-radius: 50%;
-  height: 130px;
-  width: 130px;
+  height: 95px;
+  width: 95px;
   padding: 20px;
 
   display: flex;
@@ -859,7 +869,8 @@ a {
 }
 
 .icon-contato img {
-  height: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 /* Estilização do Quem Somos */
@@ -867,11 +878,9 @@ a {
   font-family: "Special Elite", system-ui;
   color: var(--cor-preto);
   text-align: center;
-
   display: flex;
   flex-direction: column;
 }
-
 #quem_somos > h1,
 #quem_somos > p {
   margin: 24px auto;
@@ -889,29 +898,34 @@ a {
   font-size: 40px;
 }
 
-/* .perfil input[type="file"] {
-  /* esconder o input 
-  position: absolute;
+
+
+.input-cadastro input[type="file"] {
+  /* esconder o input */
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  opacity: 0;
+  height:100%;
+  opacity: 1;
   cursor: pointer;
-  /* Garante que o input esteja atrás da imagem 
+  
+  /* Garante que o input esteja atrás da imagem */
 }
 
-.perfil img {
+.img-perfil {
+  display: block;
   margin-bottom: 5px;
-  width: 30px;
-  /* Ajuste o tamanho conforme necessário 
+  width: 25px;
+  align-items: center;
+  /* Ajuste o tamanho conforme necessário*/ 
   height: auto;
-  /* Mantém a proporção da imagem 
+  /* Mantém a proporção da imagem */
   justify-content: center;
 }
 
-.img-livro input[type="file"] {
-  /* esconder o input 
+/*.img-livro input[type="file"] {
+   /*esconder o input 
   position: absolute;
   top: 0;
   left: 0;
@@ -919,8 +933,8 @@ a {
   height: 100%;
   opacity: 0;
   cursor: pointer;
-  /* Garante que o input esteja atrás da imagem 
-} */
+   /*Garante que o input esteja atrás da imagem 
+} 
 
 
 /* @media screen and (max-width:900px) {
@@ -1018,3 +1032,34 @@ a {
   }
 
 } */
+
+
+.paragrafo-index{
+  
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  height: 6vh;
+  font-size: 1.5em;
+  margin: 190px auto;
+  padding: 10px;
+  font-family: "Special Elite", system-ui;
+  flex-direction: column;
+  
+  border-radius: 10px;
+
+
+}
+
+.paragrafo-index p{
+  
+  margin: 0px auto;
+  text-align: center;
+  color: var(--preto);
+  border-radius: 10px;
+  font-size: 20px;
+  width: 465px;
+  padding: 5px;
+  border-radius: 10px;
+}

@@ -17,7 +17,7 @@ $listagem_livro = Livro::listarLivro();
                 <div class="livro">
                     <img src="data:image; base64, <?= base64_encode($livro['capa']) ?>" alt="">
                     <span class="del-livro-icon">
-                        <form action="/estante/controllers/del_livro_controller.php" method="post" onsubmit="return confirm('Você tem certeza que quer deletar este Livro ??')">
+                        <form action="/estante/controllers/del_livro_controller.php" method="post" onsubmit="return confirm('Você tem certeza que quer deletar este Livro?')">
                             <input type="hidden" name="id_livro" value="<?= $livro['id_livro'] ?>">
                             <button type="submit"><img src="/estante/imgs/delete-icon.svg" alt=""></button>
                         </form>

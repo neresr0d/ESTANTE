@@ -26,7 +26,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante/views/_cabecalho.php';
             <div class="div-contato">
               <img src="/estante/imgs/telefone-icon.svg" alt="" />
             </div>
-            (98) 3200-0032
+            (98)3003-3003
           </a>
         </div>
       </div>
