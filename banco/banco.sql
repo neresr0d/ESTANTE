@@ -45,7 +45,6 @@ INSERT INTO livro (nome_livro, autor, sinopse, foto_livro, id_categoria) VALUES
 
 ('A Dieta dos 5 Ingredientes', 'Rachael Ray', 'Ray oferece receitas simples e saudáveis utilizando apenas cinco ingredientes, visando facilitar a alimentação saudável sem comprometer o sabor ou a praticidade.', '', '6');
 
-
 CREATE TABLE favoritos (
     id_livro_favorito INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
